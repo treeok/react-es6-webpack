@@ -1,4 +1,4 @@
-react-es6-webpack     
+<h1>react-es6-webpack</h1>
 try to use react+es6+webpack create a project
 
 
