@@ -39,13 +39,10 @@ react-es6-webpack  //项目名称
   2、webpack    
 
 
-组件原理：
-  components里面放置的是各个组件
-  每个组件里面包含的是script文件和style文件，根据文件内容生成各自的bundle.js文件
-  test为测试
-  public为发布内容
+组件原理：              
+  components里面放置的是各个组件       
+  每个组件里面包含的是script文件和style文件，根据文件内容生成各自的bundle.js文件       
+  test为测试        
+  public为发布内容         
 
-
-
-1
 
