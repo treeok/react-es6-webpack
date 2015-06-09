@@ -4,8 +4,8 @@
 
 <h1>目录结构:</h1>
 <p>react-es6-webpack  //项目名称</p>
-  <p>|-src  //资源</p>
-      <p>|--components  //所有组件</p>
+  <p style="margin-left:5px;">|-src  //资源</p>
+      <p style="margin-left:10px;">|-components  //所有组件</p>
           <p>|---comment  //评论组件</p>
               <p>|----script  //js文件</p>
                   <p>|-----comment.js  //评论组件组成部分</p>
