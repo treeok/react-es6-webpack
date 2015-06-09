@@ -34,9 +34,9 @@ react-es6-webpack  //项目名称
   |-webpack.config.js                                      
 
 
-步骤：
-  1、npm install
-  2、webpack
+步骤：    
+  1、npm install     
+  2、webpack    
 
 
 组件原理：
