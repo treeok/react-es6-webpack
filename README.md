@@ -1,8 +1,8 @@
 <h1>react-es6-webpack</h1>
-try to use react+es6+webpack create a project
+<p>try to use react+es6+webpack create a project</p>
 
 
-目录结构：         
+<h1>目录结构:</h1>
 react-es6-webpack  //项目名称       
   |-src  //资源                       
       |-components  //所有组件                     
