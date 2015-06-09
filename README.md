@@ -45,7 +45,6 @@ react-es6-webpack  //项目名称
   test为测试
   public为发布内容
 
-1
 
 
 
