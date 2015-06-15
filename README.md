@@ -3,7 +3,7 @@
 
 
 <h1>目录结构:</h1>
-![](https://github.com/treeok/react-es6-webpack/blob/master/content.png)
+![](https://github.com/treeok/react-es6-webpack/commit/e66fc829f4bbfb730cfabade4962fbbc64f062be)
 
 <h1>步骤：</h1>
   <p>1、npm install </p>
