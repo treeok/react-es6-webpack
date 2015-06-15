@@ -1,13 +1,18 @@
 /**
  * Created by claire on 2015/6/3.
  */
-'use strict';
+
+var path = require('path');
 
 module.exports = {
-    //entry: './src/main.js',
-    /*output: {
-        filename: 'public/bundle.js'
-    },*/
+    entry: {
+        'comments/comment' : './src/components/comments/main',
+        'nav/nav': './src/components/nav/main'
+    },
+    output: {
+        path: path.join(__dirname, "dist"),
+        filename: "[name].bundle.js"
+    },
     module: {
         loaders: [
             {

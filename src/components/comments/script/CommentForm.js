@@ -1,28 +1,30 @@
 /**
  * Created by claire on 2015/6/8.
  */
-const React = require('React');
+var React = require('React');
 
-const CommentForm = React.createClass({
-    handleSubmit: function(e){
+var CommentForm = React.createClass({
+    handleSubmit: function(e) {
         e.preventDefault();
-        const author = React.findDOMNode(this.refs.author).value.trim();
-        const text = React.findDOMNode(this.refs.text).value.trim();
-        if(!author || !text){
+        var author = React.findDOMNode(this.refs.author).value.trim();
+        var text = React.findDOMNode(this.refs.text).value.trim();
+        if (!text || !author) {
             return;
         }
-        this.props.onCommentSubmit({author,text});
+        this.props.onCommentSubmit({author: author, text: text});
         React.findDOMNode(this.refs.author).value = '';
-        React.findDOMNode(this.refs.author).value = '';
+        React.findDOMNode(this.refs.text).value = '';
         return;
     },
-    render: function(){
+    render: function() {
         return (
             <form className="commentForm" onSubmit={this.handleSubmit}>
                 <input type="text" placeholder="Your name" ref="author" />
                 <input type="text" placeholder="Say something..." ref="text" />
                 <input type="submit" value="Post" />
             </form>
-        )
+        );
     }
 });
+
+module.exports = CommentForm;
