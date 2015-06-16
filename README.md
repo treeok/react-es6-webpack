@@ -3,32 +3,7 @@
 
 
 <h1>目录结构:</h1>
-react-es6-webpack  //项目名称
-  |-src  //资源
-      |-components  //所有组件
-          |-comment  //评论组件
-              |-script  //js文件
-                  |-comment.js  //评论组件组成部分
-                  |-commentForm.js  //评论组件组成部分
-                  |-commonList.js  //评论组件组成部分
-              |-style
-                  |-comment.less  //less样式
-              |-main.js  //entry
-          |-nav  //导航组件
-          |-pagination  //分页组件
-          |-...  //更多组件
-      |-img  //图片
-      |-fonts  //字体
-  |-dist  //发布
-      |-comments
-          |-comments.bundle.js
-      |-nav
-          |-nav.bundle.js
-      |-...  //更多组件
-  |-LICENSE
-  |-package.json
-  |-README.md
-  |-webpack.config.js
+![]https://github.com/treeok/react-es6-webpack/blob/master/context.png
 
 <h1>步骤：</h1>
   <p>1、npm install </p>
