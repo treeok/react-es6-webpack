@@ -1,7 +1,7 @@
 /**
  * Created by claire on 2015/6/8.
  */
-var React = require('React');
+var React = require('react');
 var $ = require('jquery');
 var CommentList = require('./script/commentList');
 var CommentForm = require('./script/commentForm');
@@ -57,6 +57,7 @@ var CommentBox = React.createClass({
         );
     }
 });
+
 module.exports = CommentBox;
 
 React.render(

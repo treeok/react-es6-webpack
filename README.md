@@ -13,7 +13,6 @@
 <h1>组件原理：</h1>
   <p>components里面放置的是各个组件 </p>
   <p>每个组件里面包含的是script文件和style文件，根据文件内容生成各自的bundle.js文件</p>
-  <p>test为测试</p>
-  <p>public为发布内容</p>
+  <p>dist为发布内容</p>
 
 
