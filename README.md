@@ -8,6 +8,7 @@
 <h1>步骤：</h1>
   <p>1、npm install </p>
   <p>2、webpack</p>
+  <p>3、npm start</p>
 
 
 <h1>组件原理：</h1>
