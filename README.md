@@ -31,19 +31,19 @@
       |-app.jsx   //route
       |-index.js  //entry start
       |-routes.js  //route
-<p>|-style  //less</p>
+    |-style  //less
       |-main.less
-<p>|-gulp  //gulp tasks</p>
+    |-gulp  //gulp tasks
       |-assets.js
       |-custom-task.js
-<p>|-dist  // public</p>
-<p>|-LICENSE</p>
-<p>|-package.json</p>
-<p>|-README.md</p>
-<p>|-config.js  //gulp tasks config</p>
-<p>|-gulpfile.js //gulp tasks</p>
-<p>|-webpack.config.js  // test</p>
-<p>|-webpack.config.pro.js  // production</p>
+    |-dist  // public
+    |-LICENSE
+    |-package.json
+    |-README.md
+    |-config.js  //gulp tasks config
+    |-gulpfile.js //gulp tasks
+    |-webpack.config.js  // test
+    |-webpack.config.pro.js  // production
 
 
 <h1>步骤：</h1>
