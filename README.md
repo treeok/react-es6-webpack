@@ -7,7 +7,7 @@
 
 <p>react-es6-webpack  //项目名称</p>
 <p></p>
-   |-src
+<prev><code>|-src
       |-components  //所有组件
           |-chrome
               |-index.js
@@ -31,7 +31,7 @@
           |-index.js  //route
       |-app.jsx   //route
       |-index.js  //entry start
-      |-routes.js  //route
+      |-routes.js  //route</code></prev>
 <p>|-style  //less</p>
       |-main.less
 <p>|-gulp  //gulp tasks</p>
