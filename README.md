@@ -31,7 +31,7 @@
       |-app.jsx   //route
       |-index.js  //entry start
       |-routes.js  //route
-  |-style  //less
+<p>|-style  //less</p>
       |-main.less
   |-gulp  //gulp tasks
       |-assets.js
