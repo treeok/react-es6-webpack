@@ -3,8 +3,6 @@ import React from 'react';
 import {DefaultRoute} from 'react-router';
 import Template from './template.jsx';
 
-//let data = {title: '累积收益（点）', points: '250000', latestEarn: '100', link: 'detail'};
-
 const IndexPage = React.createClass({
     getInitialState() {
         // init state
@@ -12,6 +10,18 @@ const IndexPage = React.createClass({
             points: '0',
             latestEarn: '0'
         };
+    },
+    url: 'points.json',
+    componentDidMount() {
+        $.ajax({
+            url: this.url,
+            dataType: 'json',
+            success: function(data) {
+                this.setState({points: data.points});
+            }.bind(this),
+            error: function(xhr, status, err) {
+                console.error(this.props.url, status, err.toString());
+            }.bind(this)});
     },
     link: 'detail',
     title: '累积收益（点）',
