@@ -5,6 +5,47 @@
 <h1>目录结构:</h1>
 +![](https://github.com/treeok/react-es6-webpack/blob/master/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png)
 
+<p>react-es6-webpack  //项目名称 </p>
+<p style="text-indent:1em;">|-src</p>
+      |-components  //所有组件
+          |-chrome
+              |-index.js
+              |-template.jsx
+          |-navigation
+          |-...  //更多组件
+      |-pages  //页面
+          |-index  // 首页
+               |-index.js
+               |-template.jsx
+          |-personal  // 个人中心
+               |-index.js
+               |-template.jsx
+          |-trip  // 行程
+               |-index.js
+               |-template.jsx
+          |-notfount  // 404
+               |-index.js
+               |-template.jsx
+      |-app
+          |-index.js  //route
+      |-app.jsx   //route
+      |-index.js  //entry start
+      |-routes.js  //route
+  |-style  //less
+      |-main.less
+  |-gulp  //gulp tasks
+      |-assets.js
+      |-custom-task.js
+  |-dist  // public
+  |-LICENSE
+  |-package.json
+  |-README.md
+  |-config.js  //gulp tasks config
+  |-gulpfile.js //gulp tasks
+  |-webpack.config.js  // test
+  |-webpack.config.pro.js  // production
+
+
 <h1>步骤：</h1>
   <p>1、npm install </p>
   <p>2、gulp default</p>
