@@ -14,7 +14,7 @@ const GeneratedComponent = React.createClass({
     getInitialState() {
         generatedChannel.subscribe('response', this.onResponse);
         return {
-            response: 'Click the button.',
+            response: 'Click the button.'
         };
     },
     onResponse({data}) {
@@ -23,7 +23,7 @@ const GeneratedComponent = React.createClass({
     handleClick() {
         generatedChannel.publish('request', {request: 'test'});
     },
-    render: Template,
+    render: Template
 });
 
 export default GeneratedComponent;

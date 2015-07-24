@@ -7,7 +7,7 @@ module.exports = {
     context: path.resolve(__dirname),
     entry: './src/index.js',
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'dist'),//路径导航
         filename: 'app.min.js'
     },
     resolve: {

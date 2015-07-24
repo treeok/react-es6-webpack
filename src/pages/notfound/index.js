@@ -4,7 +4,7 @@ import {NotFoundRoute} from 'react-router';
 import Template from './template.jsx';
 
 const NotFoundPage = React.createClass({
-    render: Template,
+    render: Template
 });
 
 const route = React.createElement(NotFoundRoute, {name: 'notfound', key: 'route_notfound', handler: NotFoundPage});

@@ -5,8 +5,7 @@ import Chrome from '../../components/chrome/index.js';
 const render = function() {
     return (
         <Chrome>
-            <h1>挣点</h1>
-
+            <h1>个人中心</h1>
         </Chrome>
     );
 };
