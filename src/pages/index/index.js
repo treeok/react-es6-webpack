@@ -1,5 +1,6 @@
 // react
 import React from 'react';
+import $ from 'jquery';
 import {DefaultRoute} from 'react-router';
 import Template from './template.jsx';
 
@@ -17,10 +18,7 @@ const IndexPage = React.createClass({
             url: this.url,
             dataType: 'json',
             success: function(data) {
-                this.setState({points: data.points});
-            }.bind(this),
-            error: function(xhr, status, err) {
-                console.error(this.props.url, status, err.toString());
+                this.setState({points: data.data.points});
             }.bind(this)});
     },
     link: 'detail',
