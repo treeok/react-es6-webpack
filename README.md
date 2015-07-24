@@ -6,7 +6,7 @@
 +![](https://github.com/treeok/react-es6-webpack/blob/master/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png)
 
 <p>react-es6-webpack  //项目名称</p>
-  |-src
+<p>|-src</p>
       |-components  //所有组件
           |-chrome
               |-index.js
