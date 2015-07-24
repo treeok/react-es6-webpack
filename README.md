@@ -31,13 +31,13 @@
       |-app.jsx   //route
       |-index.js  //entry start
       |-routes.js  //route</code>
-<code>|-style  //less<code>
+<code>|-style  //less</code>
       |-main.less
-<code>|-gulp  //gulp tasks<code>
+<code>|-gulp  //gulp tasks</code>
       |-assets.js
       |-custom-task.js
 <code>|-dist  // public</code>
-<code>|-LICENSE<code>
+<code>|-LICENSE</code>
 <p>|-package.json</p>
 <p>|-README.md</p>
 <p>|-config.js  //gulp tasks config</p>
