@@ -1,10 +1,8 @@
-<h1>react-es6-webpack</h1>
-<p>try to use react+es6+webpack create a project</p>
+<h1>react-es6-webpack-bootstrap-gulp</h1>
+<p>try to use react+es6+webpack+bootstrap+gulp create a project</p>
 
 
 <h1>目录结构:</h1>
-//+![]()
-
 <p>|-react-es6-webpack  //项目名称</p>
     |-src
       |-components  //所有组件
