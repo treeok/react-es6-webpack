@@ -3,13 +3,17 @@ import React from 'react';
 import {DefaultRoute} from 'react-router';
 import Template from './template.jsx';
 
+//let data = {title: '累积收益（点）', points: '250000', latestEarn: '100', link: 'detail'};
+
 const IndexPage = React.createClass({
     getInitialState() {
         // init state
         return {
-            // your stuff here
+
         };
     },
+    link: 'detail',
+    title: '累积收益（点）',
     render: Template
 });
 
