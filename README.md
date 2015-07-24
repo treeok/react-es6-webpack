@@ -24,6 +24,9 @@
           |-notfount  // 404
                |-index.js
                |-template.jsx
+          |-detail  // 挣点详情
+               |-index.js
+               |-template.jsx
       |-app
           |-index.js  //route
       |-app.jsx   //route
