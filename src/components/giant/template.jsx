@@ -9,8 +9,8 @@ const render = function() {
                 <div className="row">
                     <div className="giant-screen">
                         <div className="giant-title">{this.props.title}</div>
-                        <div className="giant-content"></div>
-                        <div className="giant-link">最新收益+
+                        <div className="giant-content">{this.props.points}</div>
+                        <div className="giant-link">最新收益+{this.props.latestearn}
                             <ReactRouter.Link to={this.props.link}>
                                 <img src={require('./arrow-right.png')} />
                             </ReactRouter.Link>

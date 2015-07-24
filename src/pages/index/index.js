@@ -9,7 +9,8 @@ const IndexPage = React.createClass({
     getInitialState() {
         // init state
         return {
-
+            points: '0',
+            latestEarn: '0'
         };
     },
     link: 'detail',
