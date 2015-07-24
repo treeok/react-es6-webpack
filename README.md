@@ -5,8 +5,8 @@
 <h1>目录结构:</h1>
 //+![]()
 
-<p>react-es6-webpack  //项目名称</p>
-<p>|-src</p>
+<p>|-react-es6-webpack  //项目名称</p>
+    |-src
       |-components  //所有组件
           |-chrome
               |-index.js
