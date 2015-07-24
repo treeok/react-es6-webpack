@@ -6,7 +6,7 @@
 +![](https://github.com/treeok/react-es6-webpack/blob/master/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png)
 
 <p>react-es6-webpack  //项目名称</p>
-<code>|-src
+<p>|-src</p>
       |-components  //所有组件
           |-chrome
               |-index.js
@@ -30,14 +30,14 @@
           |-index.js  //route
       |-app.jsx   //route
       |-index.js  //entry start
-      |-routes.js  //route</code>
-<code>|-style  //less</code>
+      |-routes.js  //route
+<p>|-style  //less</p>
       |-main.less
-<code>|-gulp  //gulp tasks</code>
+<p>|-gulp  //gulp tasks</p>
       |-assets.js
       |-custom-task.js
-<code>|-dist  // public</code>
-<code>|-LICENSE</code>
+<p>|-dist  // public</p>
+<p>|-LICENSE</p>
 <p>|-package.json</p>
 <p>|-README.md</p>
 <p>|-config.js  //gulp tasks config</p>
