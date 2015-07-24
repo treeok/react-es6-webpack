@@ -36,7 +36,7 @@
 <p>|-gulp  //gulp tasks</p>
       |-assets.js
       |-custom-task.js
-<p>|-dist  // public</p>
+<code>|-dist  // public</code>
 <p>|-LICENSE</p>
 <p>|-package.json</p>
 <p>|-README.md</p>
