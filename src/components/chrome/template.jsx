@@ -6,9 +6,7 @@ const render = function() {
     return (
         <div>
             <div className="container">
-                <div className="row">
-                    {this.props.children}
-                </div>
+                {this.props.children}
             </div>
             <Navigation />
         </div>

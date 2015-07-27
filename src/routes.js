@@ -4,6 +4,7 @@ import Trip from './pages/trip/index.js';
 import NotFound from './pages/notfound/index.js';
 import Personal from './pages/personal/index.js';
 import Detail from './pages/detail/index.js';
+import Exchange from './pages/exchange/index.js';
 
 // create route array
 let routes = [
@@ -11,7 +12,8 @@ let routes = [
     Trip,
     NotFound,
     Personal,
-    Detail
+    Detail,
+    Exchange
 ];
 
 export default routes;

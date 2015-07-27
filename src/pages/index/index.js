@@ -6,23 +6,22 @@ import Template from './template.jsx';
 
 const IndexPage = React.createClass({
     getInitialState() {
-        // init state
         return {
-            points: '0',
-            latestEarn: '0'
+            earns: '0',
+            recentMoney: '0',
+            getNums: '0',
+            exgNums: '5000'
         };
     },
-    url: 'points.json',
-    componentDidMount() {
+    componentWillMount() {
         $.ajax({
-            url: this.url,
+            url: 'points.json',
             dataType: 'json',
             success: function(data) {
-                this.setState({points: data.data.points});
-            }.bind(this)});
+                this.setState({earns: data.data.points});
+            }.bind(this)
+        });
     },
-    link: 'detail',
-    title: '累积收益（点）',
     render: Template
 });
 
