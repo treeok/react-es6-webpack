@@ -9,8 +9,8 @@ const earnsData = {link: 'detail', title: '累积收益（点）'},
     getearn = {
         title: '领取挣点', role: '个奖励待领取', style: {marginTop: '20px', borderBottom: '1px solid #e3e3e3'}
     },
-    exgearn = {title: '兑换挣点', role: '个挣点可兑换'},
-    earnshop = {link: 'exchange', title: '挣点商城', style: {marginTop: '50px'}};
+    exgearn = {link: 'exchange', title: '兑换挣点', role: '个挣点可兑换'},
+    earnshop = {title: '挣点商城', style: {marginTop: '50px'}};
 
 const render = function() {
     return (
