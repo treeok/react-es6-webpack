@@ -3,11 +3,8 @@ import React from 'react';
 import {Route} from 'react-router';
 import Template from './template.jsx';
 
-let userId;
+let userId = '123';
 const DetailPage = React.createClass({
-    getUserId() {
-        userId = '123';
-    },
     render: Template
 });
 
