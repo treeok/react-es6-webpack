@@ -1,0 +1,32 @@
+{
+  "name": "react-es6-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp default",
+    "test": "aulp test",
+    "build": "gulp build",
+    "deploy": "gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/treeok/react-es6-webpack"
+  },
+  "author": "claire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treeok/react-es6-webpack/issues"
+  },
+  "homepage": "https://github.com/treeok/react-es6-webpack",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^3.3.5",
+    "gulp": "^3.9.0",
+    "jquery": "^2.1.4",
+    "postal": "^1.0.6",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "turris-gulp-tasks": "^0.7.1"
+  }
+}
