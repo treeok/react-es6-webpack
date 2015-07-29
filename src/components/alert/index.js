@@ -1,11 +1,11 @@
 // react
 import React from 'react';
-//import $ from 'jquery';
+import $ from 'jquery';
 import Template from './template.jsx';
 
 const Alert = React.createClass({
     handleClick() {
-       alert(111);
+        $(this.getDOMNode()).remove();
     },
     render: Template
 });

@@ -24,7 +24,7 @@ const render = function() {
                     {this.props.children}
                 </div>
                 <div className="alert-bottom">
-                    <button className="btn btn-primary">确定</button>
+                    <button className="btn btn-primary" onClick={this.handleClick}>确定</button>
                 </div>
             </div>
             <Gray />
