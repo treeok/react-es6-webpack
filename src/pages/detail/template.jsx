@@ -1,11 +1,14 @@
 // react
 import React from 'react';
 import Chrome from '../../components/chrome/index.js';
+import Tabs from '../../components/tabs/index.js';
+
+let items = [{href: 'home', title: 'home'}, {href: 'detail', title: 'detail'}];
 
 const render = function() {
     return (
         <Chrome>
-            <h1>挣点详情</h1>
+            <Tabs items={items} />
         </Chrome>
     );
 };
