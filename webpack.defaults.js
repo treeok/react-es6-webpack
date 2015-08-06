@@ -21,7 +21,7 @@ module.exports = function(cfg){
         module: {
             preLoaders: [
                 {
-                    test: /\.jsx?$/,
+                    test: /\.jsx$/,
                     exclude: /node_modules/,
                     loader: 'eslint-loader'
                 }
@@ -40,7 +40,7 @@ module.exports = function(cfg){
                     loaders: ['style', 'css', 'less']
                 },
                 {
-                    test: /\.jsx?$/,
+                    test: /\.jsx$/,
                     exclude: /node_modules/,
                     loader: ['jsx', 'babel']
                 },
