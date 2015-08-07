@@ -36,6 +36,8 @@ gulp.task('serve',function(){
     var task = require('./tasks/serve.js').bind(this, config);
     gulp.task('serve', task);
 });*/
-
+gulp.task('assets', function() {
+    return gulp.src('./index.html').pipe(gulp.dest('./dist'));
+});
 gulp.task('default', ['debug', 'serve']);
 gulp.task('deploy', ['build', 'assets']);

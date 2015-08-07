@@ -3,12 +3,11 @@
  */
 var path = require('path');
 var _ = require('lodash');
-var _dirname = path.resolve(path.dirname());
 
 module.exports = function(cfg){
     return _.merge(cfg,{
         resolveLoader: {
-            root: path.join(_dirname , '..' ,'node_modules')
+            root: path.join(__dirname , '..' ,'node_modules')
         },
         resolve: {
             packageMains: ['style', 'main'],
@@ -31,11 +30,11 @@ module.exports = function(cfg){
                 },
                 {
                     test: /\.css$/,
-                    loaders: 'style-loader!css-loader'
+                    loader: 'style-loader!css-loader'
                 },
                 {
                     test: /\.less$/,
-                    loaders: 'style-loader!css-loader!less-loader!./style/main.less'
+                    loader: 'style-loader!css-loader!less-loader'
                 },
                 {
                     test: /\.woff\d?(\?.+)?$/,

@@ -1,0 +1,41 @@
+react-es6-webpack  //项目名称
+  |-src
+      |-components  //所有组件
+          |-chrome
+              |-index.js
+              |-template.jsx
+          |-navigation
+          |-...  //更多组件
+      |-pages  //页面
+          |-index  // 首页
+               |-index.js
+               |-template.jsx
+          |-personal  // 个人中心
+               |-index.js
+               |-template.jsx
+          |-trip  // 行程
+               |-index.js
+               |-template.jsx
+          |-notfount  // 404
+               |-index.js
+               |-template.jsx
+      |-app
+          |-index.js  //route
+      |-app.jsx   //route
+      |-index.js  //entry start
+      |-routes.js  //route
+  |-style  //less
+      |-main.less
+  |-gulp  //gulp tasks
+      |-assets.js
+      |-custom-task.js
+  |-dist  // public
+  |-LICENSE
+  |-package.json
+  |-README.md
+  |-config.js  //gulp tasks config
+  |-gulpfile.js //gulp tasks
+  |-webpack.config.js  // test
+  |-webpack.config.pro.js  // production
+
+
