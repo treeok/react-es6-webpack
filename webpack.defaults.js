@@ -15,34 +15,27 @@ module.exports = function(cfg){
             extensions: ['', '.js', '.jsx'],
             modulesDirectories: ['node_modules']
         },
-        node: {
-            fs: 'empty'
-        },
         module: {
-            preLoaders: [
+            /*preLoaders: [
                 {
                     test: /\.jsx$/,
                     exclude: /node_modules/,
                     loader: 'eslint-loader'
                 }
-            ],
+            ],*/
             loaders: [
                 {
-                    test: /\.css$/,
-                    loaders: ['style', 'css']
+                    test: /\.(jsx|js)$/,
+                    exclude: /node_modules/,
+                    loader: 'jsx-loader!babel-loader'
                 },
                 {
-                    test: /\.json$/,
-                    loader: 'json'
+                    test: /\.css$/,
+                    loaders: 'style-loader!css-loader'
                 },
                 {
                     test: /\.less$/,
-                    loaders: ['style', 'css', 'less']
-                },
-                {
-                    test: /\.jsx$/,
-                    exclude: /node_modules/,
-                    loader: ['jsx', 'babel']
+                    loaders: 'style-loader!css-loader!less-loader!./style/main.less'
                 },
                 {
                     test: /\.woff\d?(\?.+)?$/,
@@ -61,12 +54,12 @@ module.exports = function(cfg){
                     loader: 'url?limit=10000&minetype=image/svg+xml'
                 },
                 {
-                    test: /\.png$/,
-                    loader: 'url-loader?limit=10000&mimetype=image/png'
+                    test: /\.json$/,
+                    loader: 'json-loader'
                 },
                 {
-                    test: /\.gif$/,
-                    loader: 'url-loader?limit=10000&mimetype=image/gif'
+                    test: /\.(png|gif)$/,
+                    loader: 'url-loader?limit=10000&mimetype=image/png'
                 }
             ]
         }

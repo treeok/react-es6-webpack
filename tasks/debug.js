@@ -1,12 +1,12 @@
-var WebpackDevServer = require('webpack-dev-server');
 var webpack = require('webpack');
+var WebpackDevServer = require('webpack-dev-server');
 var definePlugin = require('../util/definePlugin');
 
 module.exports = function(config) {
     var wpConfig = config.webpackConfig.debug;
     // use production optimizations
     var optimizations = [
-        definePlugin,
+        definePlugin
     ];
     if (wpConfig.plugins) {
         wpConfig.plugins = wpConfig.plugins.concat(optimizations);
@@ -35,6 +35,7 @@ module.exports = function(config) {
     }
     // run webpack
     var compiler = webpack(wpConfig);
+
     var server = new WebpackDevServer(compiler, {
         // webpack-dev-server options
         contentBase: wpConfig.context,
@@ -67,6 +68,7 @@ module.exports = function(config) {
         // and has many other use cases (see https://github.com/webpack/webpack-dev-server/pull/127 ).
         proxy: proxy
     });
+
     server.listen(8080, 'localhost', function() {
         console.log('Webpack-Dev-Server: started on port 8080');
     });

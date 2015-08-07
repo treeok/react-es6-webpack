@@ -1,5 +1,13 @@
-@import "variable";
-@import "mixin";
+.border-radius (@radius:5px) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+.reset-box {
+    margin: 0;
+    padding: 0;
+}
+@nice-blue: #337ab7;
 
 body {
     padding-top: 0;
