@@ -1,5 +1,5 @@
-<h1>react-es6-webpack-bootstrap-gulp</h1>
-<p>try to use react+es6+webpack+bootstrap+gulp create a project</p>
+<h1>react-es6-webpack-bootstrap-gulp-less</h1>
+<p>try to use react+es6+webpack+bootstrap+gulp+less create a project</p>
 
 
 <h1>目录结构:</h1>
@@ -30,11 +30,14 @@
       |-app.jsx   //route
       |-index.js  //entry start
       |-routes.js  //route
-    |-style  //less
-      |-main.less
-    |-gulp  //gulp tasks
-      |-assets.js
-      |-custom-task.js
+      |-style  //less
+          |-main.less
+    |-tasks  //gulp tasks
+      |-build.js
+      |-debug.js
+      |-serve.js
+    |-util
+      |-definePlugin.js //插件
     |-dist  // public
     |-LICENSE
     |-package.json
@@ -43,6 +46,7 @@
     |-gulpfile.js //gulp tasks
     |-webpack.config.js  // test
     |-webpack.config.pro.js  // production
+    |-webpack.defaults.js  //
 
 
 <h1>步骤：</h1>
@@ -58,6 +62,5 @@
   <p>style中为项目css,使用less</p>
 
 
-PS:使用了一个turris-gulp-tasks
 
 
