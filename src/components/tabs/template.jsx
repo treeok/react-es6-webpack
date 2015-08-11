@@ -1,27 +1,35 @@
 // react
-import React from 'react';
-
-const Item = React.createClass({
-    render() {
-        return (
-            <li key={this.props.key}>
-                <a href={'#' + this.props.data.href}>{this.props.data.title}</a>
-            </li>
-        );
-    }
-});
+import React from 'react/addons';
 
 const render = function() {
+    let cx = React.addons.classSet;
     return (
         <div className="tabs">
-            <ul className="tabs-header clearfix">
-             {this.props.items.map((item, i) => {
-                 return (
-                     <Item key={i} data={item} />
-                 );
-             })}
+            <ul className="nav nav-tabs" role="tablist">
+              {this.props.items.map((item, i) => {
+                  let classes = cx({
+                      'active': item.selected
+                  });
+                  return (
+                      <li role="presentation" onClick={this.handleClick.bind(this, i)} className={classes}>
+                          <a aria-controls={item.id} role="tab" data-toggle="tab" href={'#' + item.id}>{item.title}</a>
+                      </li>
+                  );
+              })}
             </ul>
-            <div className="tabs-content"></div>
+            <div className="tabs-content">
+              {this.props.items.map((item, i) => {
+                  let classes = cx({
+                      'tab-pane': true,
+                      'active': item.selected
+                  });
+                  return (
+                      <div role="tabpanel" className={classes} id={item.id}>
+                           ............
+                      </div>
+                  );
+              })}
+            </div>
         </div>
     );
 };

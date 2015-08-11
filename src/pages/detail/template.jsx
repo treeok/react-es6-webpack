@@ -3,7 +3,7 @@ import React from 'react';
 import Chrome from '../../components/chrome/index.js';
 import Tabs from '../../components/tabs/index.js';
 
-let items = [{href: 'home', title: 'home'}, {href: 'detail', title: 'detail'}];
+let items = [{id: 'home', title: 'home', selected: true}, {id: 'detail', title: 'detail', selected: false}];
 
 const render = function() {
     return (
