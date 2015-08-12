@@ -17,7 +17,7 @@ const render = function() {
                   );
               })}
             </ul>
-            <div className="tabs-content">
+            <div className="tab-content">
               {this.props.items.map((item, i) => {
                   let classes = cx({
                       'tab-pane': true,

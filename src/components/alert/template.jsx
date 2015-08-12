@@ -3,17 +3,13 @@ import React from 'react';
 import $ from 'jquery';
 import Gray from '../gray/index.js';
 
-let width = $(document).width(),
-    height = $(document).height(),
-    scrollHeight = $(document).scrollTop(),
-    top = (height - 200) / 2 + scrollHeight,
-    left = (width - 200) / 2,
-    divStyle = {left: left, top: top};
-
 const render = function() {
-    return (
+    let left = (this.state.windowWidth -200) /2 ;
+    let top = (this.state.windowHeight -200) /2 + this.state.scrollTop;
+    let divStyle = {top: top,left: left};
+return (
         <div>
-            <div className="alert" style={divStyle}>
+            <div className="alert" style={divStyle} >
                 <div className="alert-header">
                     <span>提示:</span>
                     <span className="pull-right glyphicon glyphicon-remove alert-close"
